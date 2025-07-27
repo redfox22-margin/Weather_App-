@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="bcg">
+        <img id="cloudy" src="imgs/cloudy.jpg" alt="" />
+        <img id="foggy" src="imgs/Foggy.jpg" alt="" />
+        <img id="rain" src="imgs/Rain.jfif" alt="" />
+        <img class="active" id="sunny" src="imgs/sunny.jpg" alt="" />
+        <img id="thunder" src="imgs/Thunder.jfif" alt="" />
+        <img id="windy" src="imgs/windy.jpg" alt="" />
+        <img id="winter" src="imgs/Winter2.jpg" alt="" />
+        <img  id="night" src="imgs/R.jfif" alt="">
+      </div>
+    <div class="container">
+      <div class="all">
+      <p>Weather App</p>
+      <form action="">
+        <i class="search fa-solid fa-magnifying-glass"></i>
+        <input
+          type="search"
+          name="location"
+          id="location"
+          placeholder="Enter location"
+        />
+      </form>
+      <div class="detailes">
+      <div class="location">
+        <h2></h2>
+        <span class="time"></span>
+      </div>
+      <div class="info">
+        <div class="cloud">
+            <div class="imgs">
+              <img class="rain" src="imgs/cloud.png" alt="" class="clo" />
+            </div>
+          <div class="span">
+          <span class="tempB"></span>
+          <span class="text"></span>
+          </div>
+        </div>
+        <div class="allinfo">
+          <div class="spinfo">
+            <p> Humidity<span id="humidity"></span></p>
+            <p>Sun rice <span id="sunrise"></span></p>
+          </div>
+          <div class="stinfo">
+            <p>Wind <span id="wind"></span></p>
+            <p>Sun Set <span id="sunset">Sunset</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="forecast">
+        <p>Forecast</p>
+        <div class="days">
+        <div class="day">
+          <span class="dayname"></span>
+          <img src="imgs/cloud.png" alt="cloud" />
+          <span class="temp"></span>
+        </div>
+        <div class="day">
+          <span class="dayname"></span>
+          <img src="imgs/cloudy.png" alt="cloudy" />
+          <span class="temp"></span>
+        </div>
+        <div class="day">
+          <span class="dayname"></span>
+          <img src="imgs/cloud (2).png" alt="cloud" />
+          <span class="temp"></span>
+        </div>
+        <div class="day">
+          <span class="dayname"></span>
+          <img src="imgs/snow.png" alt="snow" />
+          <span class="temp"></span>
+        </div>
+        <div class="day">
+          <span class="dayname"></span>
+          <img src="imgs/snow.png" alt="snow" />
+          <span class="temp"></span>
+        </div>
+        </div>
+    </div>
+    </div>
+      </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
